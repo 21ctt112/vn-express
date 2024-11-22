@@ -8,15 +8,23 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePage from './Pages/HomePage';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <>
+      <Header />
+      <HomePage />
+      <Footer />
+    </>,
   },
   {
-    path: "about",
-    element: <></>,
+    path: "/thoi-su",
+    element: <>
+      <Header />
+    </>,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
