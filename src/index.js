@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'index.scss';
+import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
