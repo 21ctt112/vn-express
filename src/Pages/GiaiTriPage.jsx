@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 
 
-function GioiThieu() {
+function GiaiTriPage() {
    // Tạo các ref riêng biệt cho mỗi thanh cuộn
 const scrollableRef1 = useRef(null);
 const scrollableRef2 = useRef(null);
@@ -575,4 +575,4 @@ const handleScroll2 = () => {
   );
 }
 
-export default GioiThieu;
+export default GiaiTriPage;
