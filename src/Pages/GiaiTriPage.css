@@ -1,1 +1,873 @@
 
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .headerngang{
+    width: 85%;
+    margin-top: 0; /* Xóa khoảng cách trên của <hr> */
+   margin-left: 7%;
+    margin-bottom: 2%; /* Xóa khoảng cách dưới của <hr> */
+  }
+  .header {
+    padding: 15px 0;
+    text-align: left;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+    display: inline;
+    margin-left: 7%;
+  }
+  
+  .nav {
+    display: inline;
+    margin-left: 1.5%;
+    transition: color 0.3 ease;
+  }
+  
+  
+  .nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3 ease;
+  }
+  .nav a:hover{
+    color: #d86e6e;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-article {
+    position: relative; /* Để chữ h2 có thể định vị trong container */
+
+  }
+  
+  .main-article img {
+    width: 105%;
+    height:533px;
+    display: block;
+    margin-left: 13%;
+  }
+
+  .side-articles {
+    width: 30%;
+    margin-right: 6%;
+  }
+  
+  .side-articles .article {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .side-articles img {
+    width: 330px;
+    height: 198px;
+  }
+
+  .side-articles h4 {
+    font-size: 16px;
+    
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    color: #ffffff;
+    background-color:none;
+    padding: 5px;
+    width: 80%;
+    font-family: "Merriweather", serif;
+  }
+  
+  .side-articles .article p {
+    text-align: left; /* Căn chữ về bên trái */
+    font-size: 13px; /* Kích thước chữ */
+    color: #666; /* Màu chữ */
+    margin: 0;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between; /* Chia đều nội dung */
+    align-items: center; /* Căn giữa theo trục dọc */
+    margin-left: 2%;
+    width: 89%;
+  }
+  
+  .description {
+    display: flex; /* Dùng flexbox để căn chỉnh */
+    justify-content: space-between; /* Đưa các phần tử con ra hai bên */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    
+  }
+  
+  .comments {
+    position: absolute;
+    display: flex; /* Căn icon và số theo hàng ngang */
+    align-items: center; /* Căn giữa icon với số */
+    font-size: 12px; /* Kích thước nhỏ hơn */
+    color: #666; /* Màu chữ và biểu tượng */
+    margin-left: 75%; /* Đẩy biểu tượng sang bên phải */
+    margin-top: 18%;
+    transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt mà */
+  cursor: pointer; /* Con trỏ hiển thị như đường dẫn */
+  margin-left: 77%;
+  bottom: 2.5%;
+  }
+  .comments:hover {
+    color: #999999; /* Thay đổi màu khi hover (xanh dương) */
+  }
+  
+  .comments svg {
+    margin-right: 5px; /* Khoảng cách giữa icon và số */
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #ccc; /* Màu xám nhạt */
+    margin: 20px 0; /* Khoảng cách trên và dưới */
+    margin-left: 7%;
+    width: 340px; /* Chiều rộng 100% của container */
+  }
+  
+  /* Tổng thể phần các bài viết */
+.bottom-articles {
+  display: flex; /* Sử dụng flexbox để xếp các khung theo hàng ngang */
+  justify-content: center;
+  gap: 0px; /* Khoảng cách giữa các khung là 5% */
+  flex-wrap: wrap; /* Đảm bảo các khung xuống hàng nếu không đủ không gian */
+  padding: 10px 0; /* Khoảng cách trên và dưới cho toàn bộ container */
+}
+
+/* Mỗi khung bài viết */
+.article {
+  flex: 0 1 calc(23% - 10px); /* Chiều rộng mỗi khung là 23% (100% / 4 - gap) */
+  box-sizing: border-box; /* Đảm bảo padding và border không làm to hơn khung */
+  display: flex;
+  flex-direction: column; /* Đặt ảnh trên và chữ dưới */
+  align-items: center; /* Căn giữa nội dung */
+  gap: 5px; /* Khoảng cách giữa ảnh và tiêu đề */
+  text-align: center; /* Căn giữa chữ */
+}
+
+/* Hình ảnh trong khung */
+.article img {
+  width: 87%; /* Ảnh chiếm toàn bộ chiều rộng của khung */
+  height: 200px; /* Giữ nguyên tỷ lệ ảnh */
+  border-radius: 5px; /* Tạo góc bo nhẹ nếu cần */
+}
+
+/* Tiêu đề dưới ảnh */
+.article h3 {
+  margin: 0; /* Xóa khoảng cách mặc định của tiêu đề */
+  font-size: 16px; /* Điều chỉnh kích cỡ chữ */
+  color: #333; /* Màu chữ xám đậm */
+  font-weight: 500; /* Độ dày chữ vừa phải */
+  text-align: left;
+  width: 230px;
+}
+
+
+  .ngang{
+    border: none;
+    border-top: 1px solid #ccc; /* Màu xám nhạt */
+    margin: 0 0; /* Khoảng cách trên và dưới */
+    width: 85%; /* Chiều rộng 100% của container */
+    margin-bottom: 20px;
+    margin-left: 7%;
+  }
+  
+  .scroll-container {
+    position: relative; /* Để các button có thể ra ngoài */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 99%;
+  }
+  
+  .topic-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #757575;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 7%;
+  }
+  .topic-title img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    color: #757575;
+  }
+  
+  .scrollable {
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+    flex-grow: 1;
+    padding: 5px 0;
+    scrollbar-width: none; 
+    max-width: 90%;
+    margin-right: 13%;
+  }
+  .scrollable::-webkit-scrollbar {
+    display: none; /* Ẩn thanh trượt trên Chrome, Safari, Edge */
+  }
+  
+  .scrollable a {
+    color: #d10056;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 10px;
+    text-decoration: underline; 
+   
+  }
+  
+  .scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+  background-color: #fff;
+  border: none;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+  }
+  
+  .scroll-button:disabled {
+    color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .scroll-button.prev {
+    position: absolute;
+    
+    left: 87%;
+  }
+  
+  .scroll-button.next {
+    position: absolute;
+    right: 8%;
+  }
+  
+  /*------------------------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------*/
+      /*------------------------------------------------------------------------------------------*/
+      .nganglayout{
+        border: none;
+    border-top: 1px solid #ccc; /* Màu xám nhạt */
+    margin: 50px 0; /* Khoảng cách trên và dưới */
+    width: 85%; /* Chiều rộng 100% của container */
+    justify-content: center;
+    margin-left: 7%;
+      }
+/* Bố cục chính */
+.layout-wrapper {
+    display: flex;
+    padding: 0px;
+    gap: 5px;
+  }
+  
+  /* Cột bên trái - chiếm 30% */
+  .left-column {
+    margin: 1px;
+    flex: 5;
+    margin-left: 7%;
+  }
+  
+  .content-item {
+    padding: 10px 0;
+  }
+  .content-link {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: inherit; /* Giữ lại màu chữ của phần tử con */
+  }
+  
+ /* Phần tiêu đề */
+ .news-title {
+  font-size: 18px; /* Kích thước chữ tiêu đề */
+  font-weight: bold; /* Chữ đậm */
+  color: #000; /* Màu chữ mặc định */
+  cursor: pointer; /* Biểu tượng bàn tay chỉ */
+  transition: color 0.3s ease; /* Hiệu ứng mượt */
+  display: inline; /* Chỉ bao gồm chữ, không tính khoảng trắng xung quanh */
+  margin: 0; /* Loại bỏ khoảng cách mặc định */
+  padding: 0; /* Loại bỏ khoảng cách nội bộ */
+  text-align: left; /* Đảm bảo canh trái */
+}
+
+
+/* Hiệu ứng hover chỉ áp dụng lên chữ */
+.news-title:hover {
+  color: #007BFF; /* Màu xanh dương khi hover */
+}
+
+.App{
+  text-align: left;
+}
+  .news-content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .news-image {
+    margin-right: 10px;
+  }
+  
+  .news-image img {
+    width: 150px;
+    height: 92px;
+  }
+  
+  .news-text {
+    display: flex;
+    font-size: 14px;
+    color: #4F4F4F;
+    text-align: left;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 1px;
+  }
+  
+  
+  
+  /* Đường kẻ giữa */
+  .divider-line {
+    width: 1px;
+    background-color: #ccc;
+    margin: 0 0px;
+    height: 172vh; /* Đường kẻ dài */
+    max-height: 200%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /*------------------------------------------- Cột bên phải - chiếm 70%------------------------------------------------------------------------- */
+  /* Container chính của cột bên phải */
+.right-column-container {
+  display: flex; /* Đảm bảo bố cục không ảnh hưởng */
+  gap: 10px;
+  padding: 10px 0;
+  flex: 9;
+  flex-direction: column;
+
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+
+div.content-section{
+  width: auto;
+  height: 100px;
+}
+
+.left-part{
+  display: flex;
+  justify-content: space-between; /* Căn chỉnh khoảng cách đều giữa hai cột */
+
+  gap: 20px;
+  align-items: flex-start;
+}
+/* Phần bên trái */
+/* Thanh điều hướng */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề chính (Sách) */
+.navbar-title {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  color: #000;
+  margin-right: 20px;
+  border-bottom: 2px solid #880000; /* Đường gạch đỏ dưới chữ "Sách" */
+  transition: color 0.3s ease; /* Hiệu ứng hover mượt */
+  cursor: pointer;
+}
+.navbar-title:hover{
+  color: #d10056;
+}
+
+/* Link trong thanh điều hướng */
+.navbar-links {
+  display: flex;
+  text-align: left;
+  gap: 15px; /* Khoảng cách giữa các link */
+}
+
+.navbar-link {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  font-size: 13px;
+  color: #000; /* Màu chữ đen */
+  transition: color 0.3s ease; /* Hiệu ứng hover mượt */
+
+}
+
+.navbar-link:hover {
+  color: #0066FF; /* Màu chữ đỏ khi hover */
+}
+
+.right-column-left-section {
+  display: flex;
+  flex: 1.5;
+  flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+
+.right-column-small-image {
+  width: 100%; /* Ảnh tự động chiếm hết chiều ngang */
+  height: 200px; /* Giữ tỷ lệ ảnh */
+  display: block; /* Ảnh nằm riêng biệt */
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Tiêu đề */
+.right-column-article-title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Merriweather",serif;
+  margin-top: 2px; /* Tạo khoảng cách giữa ảnh và tiêu đề */
+  text-align: left;
+  transition: color 0.3s ease; /* Hiệu ứng hover mượt */
+  cursor: pointer;
+}
+.right-column-article-title:hover{
+  color: #0066FF;
+}
+
+/* Nội dung */
+.right-column-article-content {
+  font-size: 12px;
+  margin: 5px 0;
+  text-align: left;
+  color: #4F4F4F;
+  width: 100%;
+  cursor: pointer;
+}
+
+.ngang1{
+  border: none;
+  border-top: 1px solid #ccc; /* Màu xám nhạt */
+  margin: 10px; /* Khoảng cách trên và dưới */
+  margin-left: 3%;
+  width: 95%; /* Chiều rộng 100% của container */
+}
+
+.right-column-left-section2 {
+  width: 90%; /* Đảm bảo chiều rộng đủ */
+  padding: 5px 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Đảm bảo tiêu đề nằm trên ảnh */
+}
+
+.headerleft {
+  margin-bottom: 8px; /* Khoảng cách giữa tiêu đề và phần tiếp theo */
+}
+
+.right-column-article-title2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #333; /* Màu đen cho tiêu đề */
+  text-align: left;
+  width: 110%;
+  transition: color 0.3s ease; /* Hiệu ứng hover mượt */
+  cursor: pointer;
+}
+.right-column-article-title2:hover{
+  color: #0066FF;
+}
+
+.content-section {
+  display: flex; /* Đặt ảnh và nội dung nằm ngang với nhau */
+  flex-direction: row; /* Các phần tử nằm ngang */
+  align-items: flex-start; /* Căn chỉnh theo chiều dọc */
+}
+
+.right-column-small-image2 {
+  width: 50%; /* Ảnh chiếm 45% chiều rộng */
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.right-column-article-content2 {
+  display: flex;
+  font-size: 13px;
+width:1500%;
+  color: #555; /* Màu xám nhạt cho nội dung */
+  line-height: 1;
+  margin-left: 10px; /* Khoảng cách giữa ảnh và nội dung */
+text-align: left;
+cursor: pointer;
+}
+
+
+/*---------------------------------thanh doc-------------------------------------*/
+.vertical-line{
+  width: 1px;
+  background-color: #ececec;
+  height: 530px; /* Đường kẻ dài */
+}
+/* Phần bên phải */
+.right-column-right-section {
+  flex: 1.5; /* Chiếm tỷ lệ nhỏ hơn */
+}
+
+.right-column-large-image {
+  margin-top: 53PX;
+  margin-right: 20%;
+  width: 65%;
+  height: 400px;
+  cursor: pointer;
+}
+
+.right-column-right-section .right-column-article-title {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  margin: 10px 0;
+  width: 70%;
+}
+
+
+.ngang2{
+  border-top: 1px solid #ccc;
+  width: 185%;
+  bottom: 0; /* Đặt thanh ngang sát đáy container */
+}
+
+/*--------------------------------------------------------------*/
+
+.Content2 {
+  display: flex;
+  gap: 0px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  margin-top: 0;
+}
+
+.left-column2 {
+  flex:1.5;
+}
+
+.tab-menu2 {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row; 
+  
+}
+
+.tab-item2{
+  font-size: 12px;
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Hiệu ứng hover mượt */
+}
+
+.tab-item2:hover{
+  color: #007BFF;
+}
+
+.tab-item.active2 {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  color: #000;
+  margin-right: 20px;
+  border-bottom: 2px solid #880000; /* Đường gạch đỏ dưới chữ "Sách" */
+  transition: color 0.3s ease; /* Hiệu ứng hover mượt */
+  cursor: pointer;
+}
+
+.tab-item.active2:hover{
+  color: #880000;
+}
+
+.news-item2 {
+  display: flex;
+  gap: 0;
+  flex-direction: column; 
+  background-color: #E5E5E5;
+  width: 95%;
+  height: 320px;
+}
+
+.news-item2 img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.news-item-content2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.news-item-content2 h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  transition: color 0.3 ease;
+  cursor: pointer;
+  color: black;
+}
+.news-item-content2 h3:hover{
+color: #0066FF;
+}
+
+.news-item-content2 p {
+  margin: 5px 0;
+  font-size: 14px;
+  align-items: center; /* Căn giữa theo chiều dọc (nếu cần) */
+  cursor: pointer;
+  color: black;
+}
+
+.news-item-content2 .location {
+  color: #757575; /* Màu chữ nổi bật */
+  margin-right: 5px; /* Khoảng cách giữa "TP HCM -" và phần nội dung */
+}
+
+.news-item-content2 .category {
+  color: #888;
+  font-style: italic;
+}
+
+.right-column2 {
+  flex: 2;
+  margin-top: 5%;
+  margin-right: 13%;
+}
+
+.news-list-item2 {
+  margin-bottom: 10px;
+}
+
+.news-list-item2 h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 5px;
+  cursor: pointer;
+  transition: color 0.3 ease;
+  color: black;
+}
+.news-list-item2 h3:hover{
+  color: #0066FF;
+}
+
+.news-list-item2 p {
+  font-size: 14px;
+  margin: 0;
+  color: #555;
+  cursor: pointer;
+}
+
+.ngang-3{
+  border: none;
+  border-top: 1px solid #ccc; /* Màu xám nhạt */
+  margin: 10px; /* Khoảng cách trên và dưới */
+  width:90%; /* Chiều rộng 100% của container */
+display: flex;
+}
+.ngang4{
+  border: none;
+  border-top: 1px solid #ccc; /* Màu xám nhạt */
+  width: 89%;
+  margin-right: 12%;
+  margin-top: 0;
+}
+
+
+
+
+/*---------------------------------------------------------------------------*/
+
+
+.Content3{
+  display: flex;
+  gap: 0px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  margin-top: 0;
+  
+}
+
+
+
+
+
+
+
+/* Layout tổng thể */
+.tab-menu3 {
+  display: flex; /* Sắp xếp theo hàng ngang */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  gap: 15px; /* Khoảng cách giữa các mục */
+  margin-bottom: 10px;
+}
+
+/* Phim: Mục lớn nhất */
+.tab-item.active3 {
+  font-size: 20px; /* Kích thước chữ lớn nhất */
+  font-weight: bold; /* Chữ đậm */
+  color: #000; /* Màu chữ đen */
+  text-decoration: underline; /* Thêm gạch chân */
+  text-decoration-color: #880000; /* Màu gạch chân trùng với màu chữ */
+  text-decoration-thickness: 2px; /* Độ dày gạch chân */
+  text-underline-offset: 4px; /* Khoảng cách giữa chữ và gạch chân */
+  transition: color 0.3 ease;
+}
+
+.tab-item.active3:hover{
+  color: #880000;
+}
+
+
+/* Ảnh: Kích thước trung bình */
+.tab-item3 img {
+  width: 50px; /* Kích thước hình ảnh trung bình */
+  height: auto; /* Đảm bảo tỉ lệ ảnh không bị méo */
+}
+
+/* Chuyện màn ảnh: Nhỏ nhất */
+.tab-item3:last-child {
+  font-size: 14px; /* Kích thước chữ nhỏ hơn */
+  font-weight: normal; /* Không đậm */
+  color: #555; /* Màu xám nhạt hơn */
+  transition: color 0.3 ease;
+}
+
+.tab-item3:last-child:hover{
+  color: #0066FF;
+}
+
+/* Tùy chỉnh khoảng cách giữa các tab */
+.tab-item,
+.tab-item3 {
+  text-align: center; /* Căn giữa nội dung */
+  cursor: pointer; /* Con trỏ dạng tay khi rê chuột */
+}
+
+
+
+/* Toàn bộ container */
+.scroll-container1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  width: 41%; /* Độ rộng khung */
+  padding: 10px 0;
+  background-color: #fff; /* Nền trắng */
+  margin-top: 78%;
+}
+
+/* Tiêu đề */
+.topic-title1 {
+  font-size: 17px; /* Kích thước chữ */
+  color: #333; /* Màu chữ */
+  margin-right: 15px;
+  text-decoration: none;
+  white-space: nowrap; /* Tránh chữ bị xuống dòng */
+}
+
+/* Khung danh sách phim */
+.scrollable1 {
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa các mục */
+  overflow-x: auto; /* Kích hoạt cuộn ngang */
+  scroll-behavior: smooth; /* Cuộn mượt mà */
+  white-space: nowrap; /* Các mục nằm trên một hàng */
+  padding: 8px 5px;
+  border-radius: 5px; /* Bo góc */
+  margin-right: 5%;
+}
+
+/* Mục phim trong danh sách */
+.scrollable1 a {
+  display: inline-block;
+  font-size: 13px; /* Kích thước chữ */
+  color: #f36; /* Màu cam nhạt */
+  background-color: #F7F7F7; /* Nền sáng */
+  padding: 6px 12px;
+  text-decoration: none; /* Bỏ gạch chân */
+  white-space: nowrap; /* Tránh chữ bị xuống dòng */
+}
+.scrollable1::-webkit-scrollbar {
+  display: none; /* Ẩn thanh trượt trên Chrome, Safari, Edge */
+}
+
+
+/* Nút điều hướng */
+.scroll-button1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #666;
+}
+
+
+.scroll-button1.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.scroll-button1.prev1 {
+  position: absolute;
+  
+  left: 95.5%;
+}
+
+.scroll-button1.next1 {
+  position: absolute;
+  right: -4.5%;
+}
+
+
+.ngang5{
+  border: none;
+  border-top: 1px solid #ccc; /* Màu xám nhạt */
+  width: 89%;
+margin-bottom: 10%;
+}
