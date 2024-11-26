@@ -15,7 +15,7 @@ export default function Header() {
     { name: "Kinh doanh", path: "/kinh-doanh" },
     { name: "Bat dong san", path: "/bat-dong-san" },
     { name: "Khoa hoc", path: "/khoa-hoc" },
-    { name: "Giai tri", path: "/giai-tri" },
+    { name: "Giai tri", path: "/GiaiTriPage" },
     { name: "The thao", path: "/the-thao" },
     { name: "Phap luat", path: "/phap-luat" },
     { name: "Giao duc", path: "/giao-duc" },
