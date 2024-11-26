@@ -10,6 +10,7 @@ import {
 import HomePage from './Pages/HomePage';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
+import GiaiTriPage from './Pages/GiaiTriPage';
 
 const router = createBrowserRouter([
   {
@@ -24,9 +25,20 @@ const router = createBrowserRouter([
     path: "/thoi-su",
     element: <>
       <Header />
+      <div>Trang Thời sự</div>
+      <Footer />
+    </>,
+  },
+  {
+    path: "/GiaiTriPage",
+    element: <>
+      <Header />
+      <GiaiTriPage />
+
     </>,
   },
 ]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
