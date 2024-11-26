@@ -459,7 +459,7 @@ const handleScroll2 = () => {
       alt="A person in a red academic gown holding a bouquet of flowers"
     />
     <div className="news-item-content2">
-      <h3>'Gladiator II' - đấu sĩ trỗi dậy</h3>
+      <h3>'Gladiator II'-đấu sĩ trỗi dậy</h3>
       <p>
         Lucius - Paul Mescal đóng - từ nô lệ thành đấu sĩ để báo thù cho người vợ bị quân đội La Mã sát hại, trong phim "Gladiator II".
       </p>
@@ -550,19 +550,6 @@ const handleScroll2 = () => {
 </div>
 </div>
 <hr className="ngang5" />
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
