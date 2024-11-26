@@ -1,7 +1,7 @@
-// Tạ Ngọc Phi Phi 
+/* Tạ Ngọc Phi Phi 
 // Nguyễn Thế Minh Thiện
 // Nguyễn Huy Quang
-// Nguyễn Tấn Tài
+// Nguyễn Tấn Tài */
 
 
 body {
@@ -359,7 +359,7 @@ body {
     width: 1px;
     background-color: #ccc;
     margin: 0 0px;
-    height: 172vh; /* Đường kẻ dài */
+    height: 176vh; /* Đường kẻ dài */
     max-height: 200%;
     margin-left: 10px;
     margin-right: 10px;
@@ -797,7 +797,7 @@ display: flex;
   width: 41%; /* Độ rộng khung */
   padding: 10px 0;
   background-color: #fff; /* Nền trắng */
-  margin-top: 78%;
+  margin-top: 81%;
 }
 
 /* Tiêu đề */
@@ -872,5 +872,5 @@ display: flex;
   border: none;
   border-top: 1px solid #ccc; /* Màu xám nhạt */
   width: 89%;
-margin-bottom: 10%;
+margin-bottom: 4%;
 }
