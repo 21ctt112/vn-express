@@ -3,7 +3,7 @@
 // Nguyễn Huy Quang
 // Nguyễn Tấn Tài */
 
-
+/* gioithieu.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -359,7 +359,7 @@ body {
     width: 1px;
     background-color: #ccc;
     margin: 0 0px;
-    height: 176vh; /* Đường kẻ dài */
+    height: 172vh; /* Đường kẻ dài */
     max-height: 200%;
     margin-left: 10px;
     margin-right: 10px;
@@ -797,7 +797,7 @@ display: flex;
   width: 41%; /* Độ rộng khung */
   padding: 10px 0;
   background-color: #fff; /* Nền trắng */
-  margin-top: 81%;
+  margin-top: 78%;
 }
 
 /* Tiêu đề */
@@ -872,5 +872,190 @@ display: flex;
   border: none;
   border-top: 1px solid #ccc; /* Màu xám nhạt */
   width: 89%;
-margin-bottom: 4%;
+margin-bottom: 10%;
+}
+
+/*--------------------------------------------*/
+/* Tổng quát */
+.container5 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  font-family: Arial, sans-serif;
+}
+
+/* Phần Video */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-video {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.main-video .video-thumbnail {
+  width: 100%;
+  height: 300px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.main-video h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+/* Danh sách video */
+.video-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.video-item {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.video-item .thumbnail {
+  width: 100%;
+  height: 110px;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+iframe {
+  border-radius: 6px;     /* Bo tròn góc khung video */
+  border: none;           /* Loại bỏ viền mặc định của iframe */
+  width: 100%;            /* Video chiếm toàn bộ chiều rộng của khung */
+  height: 320px;           /* Đặt chiều cao tự động để giữ tỉ lệ video */
+}
+
+.video-info {
+  text-align: center;
+}
+
+.video-info h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.video-info span {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Phần Nội dung chính */
+.content-section5 {
+  display: flex;
+  gap: 20px;
+}
+
+.news-list5 {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-item {
+  display: flex;
+  gap: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.news-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.news-content h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.news-content p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Phần Nội dung bên cạnh */
+.side-content5 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.side-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.side-item a {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.side-item a:hover {
+  text-decoration: underline;
+}
+
+.ads {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.ads h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.ads p {
+  font-size: 14px;
+  margin: 0 0 10px;
+  color: #666;
+}
+
+.ad-item {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
 }
