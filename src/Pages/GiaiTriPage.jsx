@@ -4,7 +4,7 @@
 // Nguyễn Tấn Tài
 
 import React, {useState, useRef } from 'react';
-import './gioithieu.css';
+import './GiaiTriPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 
