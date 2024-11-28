@@ -4,7 +4,7 @@
 // Nguyễn Tấn Tài
 
 import React, {useState, useRef } from 'react';
-import './GiaiTriPage.css';
+import './gioithieu.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 
@@ -125,6 +125,61 @@ const handleScroll2 = () => {
         link: "https://vnexpress.net/dong-ho-ghep-dan-thu-cong-duy-nhat-cua-chopard-4819195.html"
       }
   ];
+
+  
+const videos = [
+  { id: 1, title: "'Thong dong với Bống': Hồng Nhung sẽ chia cùng người vùng lũ", duration: "Đang phát" },
+  { id: 2, title: "Bảo Thy vui thú trồng trọt", duration: "01:17" },
+  { id: 3, title: "Huỳnh Tú Anh - người mẫu Việt trên sàn diễn quốc tế", duration: "00:18" },
+  { id: 4, title: "'Thong dong Hà Nội' - Hồng Nhung kể chuyện tuổi thơ", duration: "29:53" },
+  { id: 5, title: "Kỳ Duyên: 'Tôi hiểu bố mẹ hơn sau nhiều mâu thuẫn'", duration: "03:41" },
+];
+
+const articles = [
+  {
+    id: 1,
+    title: "'Die With a Smile' đạt một tỷ lượt nghe nhanh nhất Spotify",
+    description:
+      "Ca khúc 'Die With a Smile' của Lady Gaga và Bruno Mars trở thành bài hát đạt một tỷ lượt nghe nhanh nhất trên nền tảng Spotify.",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    id: 2,
+    title: "Vũ Ngọc và Son làm show ở thư viện hơn 150 năm tuổi",
+    description:
+      "Nhà thiết kế Vũ Ngọc và Son tổ chức show xuân hè tại Thư viện Khoa học Tổng hợp TP HCM - địa danh nổi tiếng, hút khách du lịch.",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    id: 3,
+    title: "Nghệ sĩ Xuân Bắc tham dự Kun Marathon Hà Nội năm thứ ba",
+    description:
+      "Nghệ sĩ Xuân Bắc sẽ tham gia chạy, cổ vũ và giao lưu với runner nhí trong các hoạt động bên lề tại Kun Marathon Hà Nội 2024, ngày 23/11.",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    id: 4,
+    title: "Diễm My, Lê Thảo Nhi dự ra mắt BST lễ hội Tory Burch",
+    description:
+      "Dàn người đẹp, fashionista gồm Diễm My, á hậu Thảo Nhi, Tường San, Diệu Linh diện phong cách thanh lịch, quyến rũ dự ra mắt BST mới của...",
+    image: "https://via.placeholder.com/150",
+  },
+];
+
+const sideContent = [
+  {
+    title: "Dầu tẩy trang số một Nhật Bản có mặt tại Việt Nam",
+    link: "#",
+  },
+  {
+    title: "Gợi ý phối bóng tai kim cương với trang phục mùa đông",
+    link: "#",
+  },
+  {
+    title: "Bí quyết giúp bạn gái Leonardo DiCaprio giữ dáng, đẹp da",
+    link: "#",
+  },
+];
   
 
   return (
@@ -459,7 +514,7 @@ const handleScroll2 = () => {
       alt="A person in a red academic gown holding a bouquet of flowers"
     />
     <div className="news-item-content2">
-      <h3>'Gladiator II'-đấu sĩ trỗi dậy</h3>
+      <h3>'Gladiator II' - đấu sĩ trỗi dậy</h3>
       <p>
         Lucius - Paul Mescal đóng - từ nô lệ thành đấu sĩ để báo thù cho người vợ bị quân đội La Mã sát hại, trong phim "Gladiator II".
       </p>
@@ -550,6 +605,91 @@ const handleScroll2 = () => {
 </div>
 </div>
 <hr className="ngang5" />
+
+<div className="container5">
+      {/* Phần Video */}
+      <div className="video-section">
+        {/* Video chính */}
+        <div className="main-video">
+          <div className="video-thumbnail">
+          <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/3dEOQ90Ez4o?autoplay=1&si=lJeZzw9Bs_6kIg-I" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
+
+          </div>
+          <h3>'Thong dong với Bống': Hồng Nhung sẽ chia cùng người vùng lũ</h3>
+          {/* Danh sách video */}
+          <div className="video-list">
+            {videos.map((video) => (
+              <div key={video.id} className="video-item">
+                <div className="thumbnail"></div>
+                <div className="video-info">
+                  <h4>{video.title}</h4>
+                  <span>{video.duration}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Phần Bài viết và Nội dung bên phải */}
+      <div className="content-section5">
+        {/* Cột trái - Danh sách bài viết */}
+        <div className="news-list5">
+          {articles.map((article) => (
+            <div key={article.id} className="news-item">
+              <img src={article.image} alt={article.title} className="news-image" />
+              <div className="news-content">
+                <h3>{article.title}</h3>
+                <p>{article.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Cột phải - Nội dung bên cạnh */}
+        <div className="side-content5">
+          <h3>Làm đẹp</h3>
+          {sideContent.map((item, index) => (
+            <div key={index} className="side-item">
+              <a href={item.link}>{item.title}</a>
+            </div>
+          ))}
+          <div className="ads">
+            <h4>Raovat</h4>
+            <p>Đăng tin ngay</p>
+            <div className="ad-item">
+              <p>Đồng phục tốt nghiệp áo cử nhân - 99.000 VNĐ</p>
+            </div>
+            <div className="ad-item">
+              <p>Cơ sở may áo khoác gió giá rẻ - 79.000 VNĐ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
