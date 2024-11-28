@@ -11,6 +11,7 @@ import HomePage from './Pages/HomePage';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import GiaiTriPage from './Pages/GiaiTriPage';
+import PodcastPage from './Pages/PodcastPage';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,14 @@ const router = createBrowserRouter([
       <Header />
       <GiaiTriPage />
 
+    </>,
+  },
+    {
+    path: "/PodcastPage",
+    element: <>
+      <Header />
+      <PodcastPage />
+      <Footer />
     </>,
   },
 ]);
