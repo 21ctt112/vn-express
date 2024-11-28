@@ -4,6 +4,13 @@
 // Nguyễn Tấn Tài */
 
 /* gioithieu.css */
+*{ 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+ }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
