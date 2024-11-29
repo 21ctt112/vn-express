@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/ThoiSuPage",
+    path: "/thoi-su",
     element: (
       <>
         <Header />
