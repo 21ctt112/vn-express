@@ -10,6 +10,8 @@ import Footer from "./Components/Footer/Footer";
 import GiaiTriPage from "./Pages/GiaiTriPage";
 import PodcastPage from "./Pages/PodcastPage";
 import GocNhinPage from "./Pages/GocNhinPage";
+import ThoiSuPage from "./Pages/ThoiSuPage";
+
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,15 @@ const router = createBrowserRouter([
       <>
         <Header />
         <GocNhinPage />
+      </>
+    ),
+  },
+  {
+    path: "/ThoiSuPage",
+    element: (
+      <>
+        <Header />
+        <ThoiSuPage />
       </>
     ),
   },
