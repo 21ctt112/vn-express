@@ -7,7 +7,7 @@ import { IoMenu } from "react-icons/io5";
 
 export default function Header() {
   const listPage = [
-    { name: "Thoi su", path: "/thoi-su" },
+    { name: "Thoi su", path: "/ThoiSuPage" },
     { name: "Goc nhin", path: "/goc-nhin" },
     { name: "The gioi", path: "/the-gioi" },
     { name: "Video", path: "/video" },
