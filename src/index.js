@@ -52,7 +52,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/PodcastPage",
+    path: "/podcasts",
     element: (
       <>
         <Header />
