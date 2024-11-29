@@ -1,0 +1,528 @@
+.content
+{
+    display: flex;
+    width: 100%;
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 10px;
+    
+}
+.content div
+{
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+    font-weight: 700;
+    color: #626262;
+    font-size: 14px;
+
+}
+.content div:hover
+{
+    color: #B52759;
+    cursor: pointer;
+}
+.content h3{
+    padding-right: 20px;
+    font-weight: 700;
+    color: #626262;
+    font-size: 28px;
+}
+.content h3:hover
+{
+    cursor: pointer;
+}
+.container0 .top
+{
+    width: 500px;
+    height: 300px;
+}
+.container1 .top:hover
+{
+    cursor: pointer;
+}
+.container1 h3:hover
+{
+    cursor: pointer;
+    color: #0363a8;
+}
+.container1 p:hover
+{
+    cursor: pointer;
+}
+.container
+{
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+
+}
+hr
+{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: gray;
+    height: 1px;
+    border: none;
+}
+.content-container
+{
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+}
+.container1
+{
+    width: 780px;
+    background: #f7f7f7;
+    display: flex;
+}
+.container1 h3
+{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px;
+    line-height: 160%;
+}
+.container1 p
+{
+    font-size: 14px;
+    line-height: 140%;
+    padding: 15px;
+    padding-top: 0px;
+
+}
+.container .full hr
+{
+    width: 780px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.container .three-img
+{
+    width: 780px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.container .three-img .first-img
+{
+    width: 247px;
+    height: 228px;
+}
+
+.container .three-img img
+{
+    width: 250px;
+    height: 150px;
+    padding-bottom: 10px;
+}
+.container .three-img img:hover
+{
+    cursor: pointer;
+}
+.container .three-img h3
+{
+    font-size: 15px;
+    font-weight: 700;
+}
+.container .three-img h3:hover
+{
+    cursor: pointer;
+    color: #0363a8;
+}
+.container .qc-right
+{
+    padding-left: 20px;
+}
+.container .qc-right:hover
+{
+    cursor: pointer;
+}
+.container .full
+{
+    padding-right: 5px;
+}
+.container .full hr
+{
+    width: 780px;
+}
+
+/* Hoàng */
+.container2 {
+    width: 1135px;
+    height: 1065px;
+    padding: 0px 15px;
+    margin: auto;
+    display: flex;
+    padding-top: 15px;
+}
+
+.col-left {
+    width: 400px;
+    height: 1050px;
+    padding: 0px 20px 0px 0px;
+    position: relative;
+  
+}
+
+.title-news {
+    width: 100%; /* Đảm bảo tiêu đề chiếm toàn bộ chiều rộng của phần chứa */
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử */
+    flex-direction: column; /* Căn chỉnh các phần tử theo chiều dọc */
+    justify-content: flex-start; /* Căn chỉnh nội dung bắt đầu từ trên cùng */
+    overflow: hidden; /* Ẩn phần nội dung vượt quá chiều cao */
+    white-space: normal; /* Đảm bảo dòng chữ có thể xuống dòng nếu cần */
+    word-wrap: break-word; /* Cho phép từ dài tự động xuống dòng */
+}
+
+.title-news a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+    line-height: 1.1; 
+}
+
+.title-news a:hover {
+    color: #1E90FF; 
+}
+
+.thumbart {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 15px; 
+}
+
+.thumbart .image {
+    width: 145px;
+    height: 87px;
+    object-fit: cover;
+}
+
+.description {
+    color: #4F4F4F;
+    font: 15px Arial, sans-serif;
+    width: 223px;
+    height: 110px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Đảm bảo mô tả hiển thị theo chiều dọc */
+}
+
+.location-stamp {
+    font-weight: bold;
+    color: #222222;
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+.description a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.col-left:after {
+    content: ""; /* Tạo một nội dung rỗng */
+    width: 1px; /* Đường phân cách có chiều rộng 1px */
+    height: 100%; /* Chiều cao bằng 100% chiều cao của col-left */
+    background: #e5e5e5; /* Màu của đường phân cách */
+    position: absolute; /* Đặt nó vào vị trí tuyệt đối trong col-left */
+    top: 0; /* Đặt nó bắt đầu từ đầu của col-left */
+    right: 0; /* Đặt đường phân cách ở bên phải của col-left */
+}
+   
+
+
+
+
+
+
+/*         Đức        */
+/* Container chính của cột bên phải */
+.right-column-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    flex: 9;
+    flex-direction: column;
+    margin-left: 30px;
+
+  }
+  
+  /* Bố cục tổng thể cho Content2 và Content3 */
+  .Content2, .Content3 {
+    display: flex;
+    justify-content: space-between; /* Căn đều hai cột */
+    gap: 20px; /* Khoảng cách giữa hai cột */
+    
+    font-family: Arial, sans-serif;
+    width: 670px /* Giới hạn độ rộng tổng thể */
+  }
+  
+  
+  /* Cột bên trái */
+  .left-column2 {
+    flex: 1; /* Cột chiếm 50% không gian */
+    margin: 0;
+  }
+  
+  /* Cột bên phải */
+  .right-column2 {
+    padding-left: 10px;
+  
+    width: 400px;
+  }
+  
+  /* Tab menu (Chính trị/Giao thông) */
+  .tab-menu2, .tab-menu3 {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: flex-start; /* Căn trái */
+    gap: 20px; /* Khoảng cách giữa các tab */
+  }
+  
+  .tab-item2, .tab-item3 {
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .tab-item2:hover, .tab-item3:hover {
+    color: #007BFF;
+  }
+  
+  /* Tab đang được active */
+  .tab-item.active2, .tab-item.active3 {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .tab-item.active2:hover, .tab-item.active3:hover {
+    color: #880000;
+  }
+  
+  /* Tin tức chính */
+  .news-item2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    width: 245px;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-item2 img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .news-item-content2 {
+    padding: 10px;
+  }
+  
+  .news-item-content2 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    transition: color 0.3s ease;
+    color: black;
+  }
+  
+  .news-item-content2 h3:hover {
+    color: #0066FF;
+  }
+  
+  .news-item-content2 p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .news-item-content2 .location {
+    color: #757575;
+    margin-right: 5px;
+  }
+  
+  .news-item-content2 .category {
+    color: #888;
+    font-style: italic;
+  }
+  
+  /* Danh sách tin phụ */
+  .news-list-item2 {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .news-list-item2:hover {
+    background: #e9ecef;
+  }
+  
+  .news-list-item2 h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    color: black;
+  }
+  
+  .news-list-item2 h3:hover {
+    color: #0066FF;
+  }
+  
+  .news-list-item2 p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Đường kẻ ngang */
+  .ngang-3, .ngang4 {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px auto;
+    width: 90%;
+  }
+  
+  /* Khu vực "xanhla" */
+  .xanhla {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .xanhla img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  /* Tổng container */
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #EBF8FF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Phần nổi bật chính */
+  .main-highlight {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .highlight-image img {
+    width: 100px; /* Kích thước ảnh chính */
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .highlight-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .highlight-content h3:hover {
+    color: #0066FF;
+  }
+  
+  .highlight-content p {
+    font-size: 14px;
+    color: #757575;
+    margin-top: 5px;
+  }
+  
+  /* Phần liên kết bên phải */
+  .side-links {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .side-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .side-links li {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+  
+  .side-links li:hover {
+    color: #0066FF;
+  }
+  
+  .side-links li strong {
+    color: #000;
+  }
+
+  .top-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa ảnh và chữ */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #EBF8FF;
+  }
+  
+  .top-banner img {
+    width: 100px; /* Kích thước nhỏ hơn của ảnh */
+    height: auto;
+  }
+  
+  .topics {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các chủ đề */
+    flex-wrap: wrap; /* Nếu không đủ chỗ, chủ đề sẽ xuống dòng */
+  }
+  
+  .topic {
+    color: #606060; /* Màu chữ xám nhạt */
+    cursor: pointer;
+  }
+  
+  .topic:hover {
+    text-decoration: underline;
+  }
+  
