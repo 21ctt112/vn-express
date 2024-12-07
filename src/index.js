@@ -10,7 +10,12 @@ import Footer from "./Components/Footer/Footer";
 import GiaiTriPage from "./Pages/GiaiTriPage";
 import PodcastPage from "./Pages/PodcastPage";
 import GocNhinPage from "./Pages/GocNhinPage";
+<<<<<<< HEAD
 import TheGioiPage from "./Pages/TheGioiPage";
+=======
+import ThoiSuPage from "./Pages/ThoiSuPage";
+
+>>>>>>> b212b78e09e499b38b984985fe8c1a3f4fd06ddb
 
 const router = createBrowserRouter([
   {
@@ -33,6 +38,15 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "/thoi-su",
+    element: (
+      <>
+        <Header />
+        <ThoiSuPage />
+      </>
+    ),
+  },
+  {
     path: "/GiaiTriPage",
     element: (
       <>
@@ -42,7 +56,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/PodcastPage",
+    path: "/podcasts",
     element: (
       <>
         <Header />
