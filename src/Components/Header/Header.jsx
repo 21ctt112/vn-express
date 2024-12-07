@@ -9,7 +9,7 @@ export default function Header() {
   const listPage = [
     { name: "Thoi su", path: "/thoi-su" },
     { name: "Goc nhin", path: "/goc-nhin" },
-    { name: "The gioi", path: "/the-gioi" },
+    { name: "The gioi", path: "/TheGioiPage" },
     { name: "Video", path: "/video" },
     { name: "Podcasts", path: "/podcasts" },
     { name: "Kinh doanh", path: "/kinh-doanh" },

@@ -1,0 +1,215 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #666;
+}
+
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainNews {
+    display: flex;
+    gap: 20px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #eee;
+}
+
+.newsImage {
+    flex: 0 0 60%;
+}
+
+.newsImage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.newsContent {
+    flex: 0 0 calc(40% - 20px);
+    padding: 20px;
+}
+
+.newsContent h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.newsContent p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.newsInfo {
+    margin-top: 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+.newsInfo span {
+    margin-right: 15px;
+}
+
+.subNews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.newsCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.newsCard h3 {
+    font-size: 16px;
+    color: #222;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .mainNews {
+        flex-direction: column;
+    }
+    
+    .subNews {
+        grid-template-columns: 1fr;
+    }
+    
+    .newsImage, .newsContent {
+        flex: 0 0 100%;
+    }
+}
+
+.newsSection {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mainArticles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.articleLarge {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.articleLarge img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.articleMedium {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.articleMedium img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #222;
+    margin-bottom: 20px;
+}
+
+.analysisGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.analysisCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.analysisCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.analysisCard h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.analysisCard p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .articleMedium {
+        grid-template-columns: 1fr;
+    }
+
+    .analysisGrid {
+        grid-template-columns: 1fr;
+    }
+}

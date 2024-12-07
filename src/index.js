@@ -10,6 +10,7 @@ import Footer from "./Components/Footer/Footer";
 import GiaiTriPage from "./Pages/GiaiTriPage";
 import PodcastPage from "./Pages/PodcastPage";
 import GocNhinPage from "./Pages/GocNhinPage";
+import TheGioiPage from "./Pages/TheGioiPage";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,16 @@ const router = createBrowserRouter([
       <>
         <Header />
         <PodcastPage />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/TheGioiPage",
+    element: (
+      <>
+        <Header />  
+        <TheGioiPage />
         <Footer />
       </>
     ),
